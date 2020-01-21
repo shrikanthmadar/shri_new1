@@ -1,0 +1,12 @@
+Table of Contents	
+1.Top Git GUI Clients
+2.Github Desktop
+3.SourceTree
+4.GitKraken
+5.SmartGit
+6.Git Cola
+7.GitForce
+8.Giggle
+9.Magit
+10.Egit
+11.Gitg
