@@ -1,0 +1,38 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+		//int n;
+		//int[] num=[n];
+		Console.WriteLine("enter value for n");
+		int n =Convert.ToInt32(Console.ReadLine());
+		int[] num = new int[n];
+		Console.WriteLine("enter values");
+		for(int i=0;i<n;i++)
+		{
+			num[i]=Convert.ToInt32(Console.ReadLine());
+		}
+		for(int j=0;j<n;j++)
+		{
+			if(j%2==0)
+			{
+				num[j]=num[j]+1;	
+			}
+			else
+			{
+				num[j]=num[j]-1;
+			}
+		}
+				Console.WriteLine("final array is:");
+		for(int k=0;k<n; k++)
+		{
+			Console.WriteLine(num[k]);	
+		}
+		//func set_room_details()
+		
+	}
+}
+
