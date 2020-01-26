@@ -1,0 +1,63 @@
+h1{color:blue ;}
+h1{color:orange ;}
+h2{color:red ;}
+h3{color:rosybrown ;}
+h4{color:royalblue ;}
+h5{color:green ;}
+h6,p{color:yellowgreen;}
+b,i,strike,font,ol{color:#cdb132;}
+form,table{color:yellowgreen;}
+.outer-container {
+    height: 200px;
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }	
+  .outer-container div {
+    width: 60%;
+    padding: 2%;
+  }
+  .red {
+    background: orangered;
+  }
+  .green {
+    background: yellowgreen;
+  }
+  .blue {
+    background: steelblue;
+  }
+  div { 
+    background: gold; 
+    font-size: 1.5em;
+  padding: 20px;
+  border-width: thin medium thick 30px;
+  border-color: orangered;
+  border-style: solid;
+     
+  }
+  p {
+    text-align: justify;
+    margin: 0 20vw;
+    font-size: 4vw;
+  }
+  table { 
+    table-layout: fixed;
+    }
+    d {
+        font-size: 5vw;
+        padding: 5vw;
+        margin: 5vw;
+        outline-width: 15px;
+        outline-style: solid;
+        outline-color: orange;
+        border: 5px solid green;
+        }
+        .backgroundBox {
+            width: 200px;
+            padding: 3px 130px 3px 10px;
+            background: url("/pix/samples/71.gif") gold 90% 30% no-repeat;
+          }
+  
