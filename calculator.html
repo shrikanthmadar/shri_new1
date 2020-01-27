@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function calculate() {
+            var num1 = parseInt(document.getElementById("n1").value);
+            var num2 = parseInt(document.getElementById("n2").value);
+            var opr = document.getElementById("op").value;
+            console.log(num1);
+            console.log(num2);
+            console.log(opr);
+            var res = 0;
+            if (isNaN(num1) != 1 && isNaN(num2) != 1) {
+                function print(res) {
+
+                    document.write(num1);
+                    document.write(opr);
+                    document.write(num2);
+                    document.write('=');
+                    document.write(res);
+                }
+
+
+                if (opr == '+') {
+                    //document.write(num1 + num2);
+                    res = num1 + num2;
+                    print(res);
+                }
+                else if (opr == '-') {
+                    //document.write(num1 - num2);
+                    var res = num1 - num2;
+                    print(res);
+
+                }
+
+                else if (opr == '*') {
+                    //document.write(num1 * num2);
+                    res = num1 * num2;
+                    print(res);
+                }
+
+                else if (opr == '/') {
+                    // document.write(num1 / num2);
+                    res = num1 / num2
+                    print(res);
+                }
+                else {
+                    document.write("enter proper operator within(+,-,*,/)");
+                }
+            }
+            else {
+                document.write("enter proper operator");
+            }
+        }
+
+            // else {
+            // document.write("enter valid numbers");
+            // }
+
+
+    </script>
+</head>
+
+<body>
+    <div align="Left">
+        <h1>Sample calculator</h1>
+        <form>
+            <label>Enter first number: </label>
+            <input type="text" id="n1" required /><br />
+            <hr />
+            <label>enter operation(+,-,*,/): </label>
+            <input type="text" id="op" required><br />
+            <hr />
+            <label>Enter second number: </label>
+            <input type="text" id="n2" required><br />
+            <hr />
+        </form>
+        <button type="submit" onclick="calculate()">Submit</button>
+    </div>
+</body>
+
+</html>
